@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horaizon | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="Horaizon Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Agent Portal</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul class="nav nav-sidebar flex-column nav-tabs h-100 border-0" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+          <li class="nav-item user-panel mt-3 pb-3 mb-3">
+            <a class="nav-link " id="vert-tabs-profile-tab" data-toggle="pill" href="#vert-tabs-profile" role="tab" aria-controls="vert-tabs-profile" aria-selected="true"><img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"><p class="ml-1"> Agent Name </p></a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="vert-tabs-dashboard-tab" data-toggle="pill" href="#vert-tabs-dashboard" role="tab" aria-controls="vert-tabs-home" aria-selected="true"><i class="nav-icon fas fa-tachometer-alt"></i><p>Home</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="vert-tabs-online-application-tab" data-toggle="pill" href="#vert-tabs-online-application" role="tab" aria-controls="vert-tabs-online-application" aria-selected="false"><i class="nav-icon fas fa-tachometer-alt"></i><p>Online Application</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="vert-tabs-messages-tab" data-toggle="pill" href="#vert-tabs-messages" role="tab" aria-controls="vert-tabs-messages" aria-selected="false"><i class="nav-icon fas fa-tachometer-alt"></i><p>ePDF Applications Forms</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="vert-tabs-settings-tab" data-toggle="pill" href="#vert-tabs-settings" role="tab" aria-controls="vert-tabs-settings" aria-selected="false"><i class="nav-icon fas fa-tachometer-alt"></i><p>Statues Tracker</p></a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="tab-content" id="vert-tabs-tabContent">
+          <div class="tab-pane fade" id="vert-tabs-profile" role="tabpanel" aria-labelledby="vert-tabs-profile-tab">
+          </div>
+          <div class="tab-pane text-left fade show active" id="vert-tabs-dashboard" role="tabpanel" aria-labelledby="vert-tabs-dashboard-tab">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                    <h1 class="m-0">Dashboard</h1>
+                  </div><!-- /.col -->
+                  <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                  <div class="inner">
+                    <h3>150</h3>
+
+                    <p>New Orders</p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-bag"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                    <p>Bounce Rate</p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                  <div class="inner">
+                    <h3>44</h3>
+
+                    <p>User Registrations</p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-person-add"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <h3>65</h3>
+
+                    <p>Unique Visitors</p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+            </div>
+            <!-- /.row -->
+            <!-- Main row -->
+            <div class="row">
+              <!-- Left col -->
+              <section class="col-lg-7 connectedSortable">
+                <!-- TO DO List -->
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      <i class="ion ion-clipboard mr-1"></i>
+                      To Do List
+                    </h3>
+
+                    <div class="card-tools">
+                      <ul class="pagination pagination-sm">
+                        <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <ul class="todo-list" data-widget="todo-list">
+                      <li>
+                        <!-- drag handle -->
+                        <span class="handle">
+                      <i class="fas fa-ellipsis-v"></i>
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                        <!-- checkbox -->
+                        <div  class="icheck-primary d-inline ml-2">
+                          <input type="checkbox" value="" name="todo1" id="todoCheck1">
+                          <label for="todoCheck1"></label>
+                        </div>
+                        <!-- todo text -->
+                        <span class="text">Design a nice theme</span>
+                        <!-- Emphasis label -->
+                        <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>
+                        <!-- General tools such as edit or delete-->
+                        <div class="tools">
+                          <i class="fas fa-edit"></i>
+                          <i class="fas fa-trash-o"></i>
+                        </div>
+                      </li>
+                      <li>
+                    <span class="handle">
+                      <i class="fas fa-ellipsis-v"></i>
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                        <div  class="icheck-primary d-inline ml-2">
+                          <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>
+                          <label for="todoCheck2"></label>
+                        </div>
+                        <span class="text">Make the theme responsive</span>
+                        <small class="badge badge-info"><i class="far fa-clock"></i> 4 hours</small>
+                        <div class="tools">
+                          <i class="fas fa-edit"></i>
+                          <i class="fas fa-trash-o"></i>
+                        </div>
+                      </li>
+                      <li>
+                    <span class="handle">
+                      <i class="fas fa-ellipsis-v"></i>
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                        <div  class="icheck-primary d-inline ml-2">
+                          <input type="checkbox" value="" name="todo3" id="todoCheck3">
+                          <label for="todoCheck3"></label>
+                        </div>
+                        <span class="text">Let theme shine like a star</span>
+                        <small class="badge badge-warning"><i class="far fa-clock"></i> 1 day</small>
+                        <div class="tools">
+                          <i class="fas fa-edit"></i>
+                          <i class="fas fa-trash-o"></i>
+                        </div>
+                      </li>
+                      <li>
+                    <span class="handle">
+                      <i class="fas fa-ellipsis-v"></i>
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                        <div  class="icheck-primary d-inline ml-2">
+                          <input type="checkbox" value="" name="todo4" id="todoCheck4">
+                          <label for="todoCheck4"></label>
+                        </div>
+                        <span class="text">Let theme shine like a star</span>
+                        <small class="badge badge-success"><i class="far fa-clock"></i> 3 days</small>
+                        <div class="tools">
+                          <i class="fas fa-edit"></i>
+                          <i class="fas fa-trash-o"></i>
+                        </div>
+                      </li>
+                      <li>
+                    <span class="handle">
+                      <i class="fas fa-ellipsis-v"></i>
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                        <div  class="icheck-primary d-inline ml-2">
+                          <input type="checkbox" value="" name="todo5" id="todoCheck5">
+                          <label for="todoCheck5"></label>
+                        </div>
+                        <span class="text">Check your messages and notifications</span>
+                        <small class="badge badge-primary"><i class="far fa-clock"></i> 1 week</small>
+                        <div class="tools">
+                          <i class="fas fa-edit"></i>
+                          <i class="fas fa-trash-o"></i>
+                        </div>
+                      </li>
+                      <li>
+                    <span class="handle">
+                      <i class="fas fa-ellipsis-v"></i>
+                      <i class="fas fa-ellipsis-v"></i>
+                    </span>
+                        <div  class="icheck-primary d-inline ml-2">
+                          <input type="checkbox" value="" name="todo6" id="todoCheck6">
+                          <label for="todoCheck6"></label>
+                        </div>
+                        <span class="text">Let theme shine like a star</span>
+                        <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 month</small>
+                        <div class="tools">
+                          <i class="fas fa-edit"></i>
+                          <i class="fas fa-trash-o"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer clearfix">
+                    <button type="button" class="btn btn-info float-right"><i class="fas fa-plus"></i> Add item</button>
+                  </div>
+                </div>
+                <!-- /.card -->
+              </section>
+              <!-- /.Left col -->
+              <!-- right col (We are only adding the ID to make the widgets sortable)-->
+              <section class="col-lg-5 connectedSortable">
+                <!-- Calendar -->
+                <div class="card bg-gradient-success">
+                  <div class="card-header border-0">
+
+                    <h3 class="card-title">
+                      <i class="far fa-calendar-alt"></i>
+                      Calendar
+                    </h3>
+                    <!-- tools card -->
+                    <div class="card-tools">
+                      <!-- button with a dropdown -->
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
+                          <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="dropdown-menu" role="menu">
+                          <a href="#" class="dropdown-item">Add new event</a>
+                          <a href="#" class="dropdown-item">Clear events</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#" class="dropdown-item">View calendar</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                    <!-- /. tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body pt-0">
+                    <!--The calendar -->
+                    <div id="calendar" style="width: 100%"></div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </section>
+              <!-- right col -->
+            </div>
+            <!-- /.row (main row) -->
+          </div>
+          <div class="tab-pane fade" id="vert-tabs-online-application" role="tabpanel" aria-labelledby="vert-tabs-online-application-tab">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                    <h1 class="m-0">Online Application</h1>
+                  </div><!-- /.col -->
+                  <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                      <li class="breadcrumb-item"><a href="#">Online Application</a></li>
+                      <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <div class="row">
+              <div class="col-12">
+                <h4>Select a region  <br/><small>Please use the region the student wishes to study in:</small></h4>
+              </div>
+              <div class="col">
+                <div class="card card-primary card-outline card-outline-tabs">
+                  <div class="card-header p-0 border-bottom-0">
+                    <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="custom-tabs-one-UK/Europe-tab" data-toggle="pill" href="#custom-tabs-one-UK/Europe" role="tab" aria-controls="custom-tabs-one-UK/Europe" aria-selected="true">UK/Europe</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">North America</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">Australia and New Zealand</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content" id="custom-tabs-one-tabContent">
+                      <div class="tab-pane fade show active" id="custom-tabs-one-UK/Europe" role="tabpanel" aria-labelledby="custom-tabs-one-UK/Europe-tab">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="card card-default">
+                              <div class="card-body p-0">
+                                <div class="bs-stepper">
+                                  <div class="bs-stepper-header" role="tablist">
+                                    <!-- your steps here -->
+                                    <div class="step" data-target="#center-selection">
+                                      <button type="button" class="step-trigger" role="tab" aria-controls="center-selection" id="center-selection-trigger">
+                                        <span class="bs-stepper-circle">1</span>
+                                        <span class="bs-stepper-label">Center Selection</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#student-details">
+                                      <button type="button" class="step-trigger" role="tab" aria-controls="student-details" id="student-details-trigger">
+                                        <span class="bs-stepper-circle">2</span>
+                                        <span class="bs-stepper-label">Student Details</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#contact-details">
+                                      <button type="button" class="step-trigger" role="tab" aria-controls="contact-details" id="contact-details-trigger">
+                                        <span class="bs-stepper-circle">3</span>
+                                        <span class="bs-stepper-label">Contact Details</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#education-and-language">
+                                      <button type="button" class="step-trigger" role="tab" aria-controls="education-and-language" id="education-and-language-trigger">
+                                        <span class="bs-stepper-circle">4</span>
+                                        <span class="bs-stepper-label">Contact Details</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#other-info">
+                                      <button type="button" class="step-trigger" role="tab" aria-controls="other-info" id="other-info-trigger">
+                                        <span class="bs-stepper-circle">5</span>
+                                        <span class="bs-stepper-label">Other Information</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#doc-upload">
+                                      <button type="button" class="step-trigger" role="tab" aria-controls="doc-upload" id="doc-upload-trigger">
+                                        <span class="bs-stepper-circle">6</span>
+                                        <span class="bs-stepper-label">Document Upload</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="bs-stepper-content">
+                                    <!-- your steps content here -->
+                                    <div id="center-selection" class="content" role="tabpanel" aria-labelledby="center-selection-trigger">
+                                      <!-- iCheck -->
+                                      <div class="card card-success">
+                                        <div class="card-header">
+                                          <h3 class="card-title">iCheck Bootstrap - Checkbox &amp; Radio Inputs</h3>
+                                        </div>
+                                        <div class="card-body">
+                                          <!-- Minimal style -->
+                                          <div class="row">
+                                            <div class="col-sm-6">
+                                              <!-- checkbox -->
+                                              <div class="form-group clearfix">
+                                                <div class="icheck-primary d-inline">
+                                                  <button type="button" class="btn btn-lg btn-outline-info">Button</button>
+                                                </div>
+                                                <div class="icheck-primary d-inline">
+                                                  <button type="button" class="btn btn-lg btn-outline-info">Button</button>
+                                                </div>
+                                                <div class="icheck-primary d-inline">
+                                                  <button type="button" class="btn btn-lg btn-outline-info">Button</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                              <!-- radio -->
+                                              <div class="form-group clearfix">
+                                                <div class="icheck-primary d-inline">
+                                                  <button type="button" class="btn btn-lg btn-outline-info">Button</button>
+                                                </div>
+                                                <div class="icheck-primary d-inline">
+                                                  <input type="button" id="radioPrimary2" name="r1">
+                                                  <label for="radioPrimary2">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-primary d-inline">
+                                                  <input type="radio" id="radioPrimary3" name="r1" disabled>
+                                                  <label for="radioPrimary3">
+                                                    Primary radio
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- Minimal red style -->
+                                          <div class="row">
+                                            <div class="col-sm-6">
+                                              <!-- checkbox -->
+                                              <div class="form-group clearfix">
+                                                <div class="icheck-danger d-inline">
+                                                  <input type="checkbox" checked id="checkboxDanger1">
+                                                  <label for="checkboxDanger1">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-danger d-inline">
+                                                  <input type="checkbox" id="checkboxDanger2">
+                                                  <label for="checkboxDanger2">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-danger d-inline">
+                                                  <input type="checkbox" disabled id="checkboxDanger3">
+                                                  <label for="checkboxDanger3">
+                                                    Danger checkbox
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                              <!-- radio -->
+                                              <div class="form-group clearfix">
+                                                <div class="icheck-danger d-inline">
+                                                  <input type="radio" name="r2" checked id="radioDanger1">
+                                                  <label for="radioDanger1">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-danger d-inline">
+                                                  <input type="radio" name="r2" id="radioDanger2">
+                                                  <label for="radioDanger2">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-danger d-inline">
+                                                  <input type="radio" name="r2" disabled id="radioDanger3">
+                                                  <label for="radioDanger3">
+                                                    Danger radio
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- Minimal red style -->
+                                          <div class="row">
+                                            <div class="col-sm-6">
+                                              <!-- checkbox -->
+                                              <div class="form-group clearfix">
+                                                <div class="icheck-success d-inline">
+                                                  <input type="checkbox" checked id="checkboxSuccess1">
+                                                  <label for="checkboxSuccess1">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-success d-inline">
+                                                  <input type="checkbox" id="checkboxSuccess2">
+                                                  <label for="checkboxSuccess2">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-success d-inline">
+                                                  <input type="checkbox" disabled id="checkboxSuccess3">
+                                                  <label for="checkboxSuccess3">
+                                                    Success checkbox
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                              <!-- radio -->
+                                              <div class="form-group clearfix">
+                                                <div class="icheck-success d-inline">
+                                                  <input type="radio" name="r3" checked id="radioSuccess1">
+                                                  <label for="radioSuccess1">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-success d-inline">
+                                                  <input type="radio" name="r3" id="radioSuccess2">
+                                                  <label for="radioSuccess2">
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-success d-inline">
+                                                  <input type="radio" name="r3" disabled id="radioSuccess3">
+                                                  <label for="radioSuccess3">
+                                                    Success radio
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- /.card-body -->
+                                        <div class="card-footer">
+                                          Many more skins available. <a href="https://bantikyan.github.io/icheck-bootstrap/">Documentation</a>
+                                        </div>
+                                      </div>
+                                      <!-- /.card -->
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+
+                                        </div>
+                                      </div>
+                                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                                    </div>
+                                    <div id="student-details" class="content" role="tabpanel" aria-labelledby="student-details-trigger">
+                                      <div class="form-group">
+                                        <label for="exampleInputFile">File input</label>
+                                        <div class="input-group">
+                                          <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                          </div>
+                                          <div class="input-group-append">
+                                            <span class="input-group-text">Upload</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
+                                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                                    </div>
+                                    <div id="contact-details" class="content" role="tabpanel" aria-labelledby="contact-details-trigger">
+                                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
+                                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                                    </div>
+                                    <div id="education-and-language" class="content" role="tabpanel" aria-labelledby="education-and-language-trigger">
+                                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
+                                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                                    </div>
+                                    <div id="other-info" class="content" role="tabpanel" aria-labelledby="other-info-trigger">
+                                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
+                                      <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                                    </div>
+                                    <div id="doc-upload" class="content" role="tabpanel" aria-labelledby="doc-upload-trigger">
+                                      <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                        </div>
+                        <!-- /.row -->
+                      </div>
+                      <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                      </div>
+                      <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="vert-tabs-messages" role="tabpanel" aria-labelledby="vert-tabs-messages-tab">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                    <h1 class="m-0">ePDF Application Forms</h1>
+                  </div><!-- /.col -->
+                  <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                      <li class="breadcrumb-item"><a href="#">ePDF Application Forms</a></li>
+                      <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+          </div>
+          <div class="tab-pane fade" id="vert-tabs-settings" role="tabpanel" aria-labelledby="vert-tabs-settings-tab">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                    <h1 class="m-0">Statues Tracker</h1>
+                  </div><!-- /.col -->
+                  <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                      <li class="breadcrumb-item"><a href="#">Statues Tracker</a></li>
+                      <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2020 <a href="">ITea team</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.1.0-rc
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- BS-Stepper -->
+<script src="plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<script>
+  // BS-Stepper Init
+  document.addEventListener('DOMContentLoaded', function () {
+    window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+  });
+</script>
+</body>
+</html>
